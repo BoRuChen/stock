@@ -1,15 +1,15 @@
 import stockData from 'mockData/stock.json';
-import { ChartContainer } from '@/components/chart/ChartContainer/ChartContainer';
-import Stock from '@/components/chart/Stock/Stock';
+import { ChartContainer } from '@/components/Chart/ChartContainer/ChartContainer';
+import Stock from '@/components/Chart/Stock/Stock';
 
-export default function Home() {
+const Home = async (props: any) => {
 	return (
-		<div className={'container mx-auto'}>
-			<div className={'w-full h-[300px]'}>
-				<ChartContainer>
-					<Stock stockData={stockData} />
-				</ChartContainer>
-			</div>
+		<div className={'w-full h-[300px]'}>
+			<ChartContainer>
+				<Stock stockData={stockData} />
+			</ChartContainer>
 		</div>
 	);
-}
+};
+
+export default Home;

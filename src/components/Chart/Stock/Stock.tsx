@@ -7,7 +7,7 @@ import { AxisBottom, AxisLeft } from '@visx/axis';
 import { GridRows } from '@visx/grid';
 import { Bar } from '@visx/shape';
 import moment from 'moment';
-import { DataProps, StockProps } from '@/components/chart/Stock/type';
+import { DataProps, StockProps } from '@/components/Chart/Stock/type';
 import { useTooltip, Tooltip, defaultStyles } from '@visx/tooltip';
 import { localPoint } from '@visx/event';
 
